@@ -1,0 +1,111 @@
+"Task 1"
+import 'dart:io';
+
+void main() {
+  print("enter your name");
+  var name = stdin.readLineSync(); 
+  //printing the name
+  print("Hello, $name, welcome to the world");
+
+}
+"Task 2"
+import 'dart:io';
+
+void main() {
+  print("Welcome to the lab");
+  //printing the name
+  stdout.write("Welcome to the Lab");
+
+}
+"Task 3"
+void main() {
+  List<int> ages = [10,30,34];
+  List<String> names=['john', 'robin','peter'];
+  var mixed= [10,'john', 18.9];
+  print(ages);
+  print(names);
+  print(mixed);
+
+}
+"Task 4"
+void main(){
+  var list =List<int>.filled(5, 0);
+  print(list);
+}
+"Task 5"
+ void main(){
+  var list =[34,56,65,78,12,35];
+  print(list[0]);
+  print(list[1]);
+  print(list[2]);
+  print(list[3]);
+  print(list[4]);
+ }
+"Task 6"
+ void main(){
+  var list =[34,56,65,78,12,35];
+  print(list.indexOf(65));
+ }
+"Task 7"
+void main(){
+  Set<String> fruits={'Apple', 'Banana','Orange'};
+  stdout.write(fruits); 
+}
+"Task 8"
+void main(){
+  Set<String> fruits={'Apple', 'Banana','Orange','Mango'};
+  print("FIrst value is ${fruits.first}");
+  print("Last value is ${fruits.last} ");
+  print("Is fruits empty? ${fruits.isEmpty}");
+  print("Is not empty ${fruits.isNotEmpty}");
+  print("The lemght of fruit is ${fruits.length}"); 
+}
+"Task 9"
+void main(){
+  Set<String> fruits={'Apple', 'Banana','Orange','Mango'};
+  print(fruits.contains("Mango"));
+  print(fruits.contains("Lemon"));
+}
+"Task 10"
+void main(){
+  Set<String> fruits={'Apple', 'Banana','Orange','Mango'};
+  fruits.add("Lemon");
+  fruits.add("Grapes");
+  print("Fruit set after adding lemon and grapes $fruits");
+  fruits.remove("Mango");
+  print("After removing $fruits");
+}
+"Task 11"
+void main(){
+  Map<String,String> countryCapital= {
+    'USA': 'Washington DC',
+    'Pakistan' : 'Islamabad',
+    'China' : 'Beijing'
+  };
+  print(countryCapital);
+}
+
+"Task 12"
+void main(){
+  Map<String,String> countryCapital= {
+    'USA': 'Washington DC',
+    'Pakistan' : 'Islamabad',
+    'China' : 'Beijing'
+  };
+  print(countryCapital['USA']);
+}
+
+"Task 13"
+
+void main(){
+  Map<String,double> expenses ={
+    'sun' : 3000.0,
+    'mon' : 4000.0,
+    'tue' : 5000.0
+  };
+  print("All keys of Map: ${expenses.keys}");
+  print("All values of map: ${expenses.values}");
+  print("Is Map empty: ${expenses.isEmpty}");
+  print("Is list is not empty: ${expenses.isNotEmpty}");
+  print("Lenght of map: ${expenses.length}");
+}
