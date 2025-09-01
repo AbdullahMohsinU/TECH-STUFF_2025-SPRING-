@@ -1,0 +1,25 @@
+Arrival time and burst time
+initialize all other vairable like wt,tat,ct,currenttime=0
+start loop
+-check curent time if it is less than arrival time make it equal to arrival time
+-calculate,tat,wt,and set curtime to completiontime of that process
+print all results
+stop
+at = [0,3,1,2]
+bt = [5,3,8,6]
+n= len(at)
+ct = [0]*n
+tat= [0]*n
+wt = [0]*n
+curtime=0
+for i in range(n):
+   if curtime < at[i]:
+     curtime = at[i]
+   ct[i] = curtime + bt[i]
+   tat[i] = ct[i] - at[i]
+   wt[i] = tat[i] - bt[i]
+   curtime = ct[i]
+print ("PID\tArrivalTime\tBurstTime\tCompletionTime\tTurnaroundTime\tWaitingTime")
+for i in range(n):
+    print(i+1, "\t ", at[i], "\t\t", bt[i], "\t\t",ct[i],"\t\t", tat[i], "\t\t", wt[i])
+
