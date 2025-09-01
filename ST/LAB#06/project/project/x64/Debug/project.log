@@ -1,0 +1,11 @@
+﻿  mi.cpp
+C:\Users\TEMP\Desktop\project\project\my.h(8,17): error C2061: syntax error: identifier 'string'
+C:\Users\TEMP\Desktop\project\project\mi.cpp(13,28): error C2065: 'string': undeclared identifier
+C:\Users\TEMP\Desktop\project\project\mi.cpp(13,35): error C2146: syntax error: missing ')' before identifier 'a'
+C:\Users\TEMP\Desktop\project\project\mi.cpp(13,38): error C2143: syntax error: missing ';' before '{'
+C:\Users\TEMP\Desktop\project\project\mi.cpp(13,38): error C2447: '{': missing function header (old-style formal list?)
+  project.cpp
+C:\Users\TEMP\Desktop\project\project\my.h(8,17): error C2061: syntax error: identifier 'string'
+C:\Users\TEMP\Desktop\project\project\project.cpp(13,29): error C2660: 'calculator::classify': function does not take 1 arguments
+C:\Users\TEMP\Desktop\project\project\my.h(8,8): message : see declaration of 'calculator::classify'
+  Generating Code...

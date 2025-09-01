@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+    <style>
+    .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+    </style>
+</head>
+<body>
+    <h2>Toggle Switch with Text</h2>
+    <label class="toggle-switch">
+        <input type="checkbox" id="toggle">
+        <span class="slider"></span>
+    </label>
+
+    <p id="status">Switch is OFF</p>
+    <div id="text-container">
+        <p id="text_1"></p>
+        <p id="text_2"></p>
+        <p id="text_3"></p>
+    </div>
+
+    <script>
+    const toggle = document.getElementById('toggle');
+    const status = document.getElementById('status');
+    const text1 = "MY WORLD";
+    const text2 = "MY BEAUTIFUL GREEN HOUSE IS LOVELY";
+    const text3 = "I SKIP THIS TERM!!!";
+
+    toggle.addEventListener('change', () => {
+        if (toggle.checked) {
+            status.textContent = 'Switch is ON';
+            document.getElementById("text_1").innerHTML = text1;
+            document.getElementById("text_2").innerHTML = text2;
+            document.getElementById("text_3").innerHTML = text3;
+        } else {
+            status.textContent = 'Switch is OFF';
+            document.getElementById("text_1").innerHTML = '';
+            document.getElementById("text_2").innerHTML = '';
+            document.getElementById("text_3").innerHTML = '';
+        }
+    });
+
+    const mergedText = `${text1} ${text2} ${text3}`;
+   
+    </script>
+</body>
+</html>

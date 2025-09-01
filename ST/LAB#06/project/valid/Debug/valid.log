@@ -1,0 +1,8 @@
+﻿  test.cpp
+C:\Users\TEMP\Desktop\project\valid\test.cpp(10,13): error C3646: 'calc': unknown override specifier
+C:\Users\TEMP\Desktop\project\valid\test.cpp(10,17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\TEMP\Desktop\project\valid\test.cpp(16,2): error C2065: 'calc': undeclared identifier
+C:\Users\TEMP\Desktop\project\valid\test.cpp(16,2): error C2660: 'testing::internal::EqHelper<false>::Compare': function does not take 3 arguments
+C:\Users\TEMP\Desktop\project\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.3\build\native\include\gtest\gtest.h(1481,26): message : see declaration of 'testing::internal::EqHelper<false>::Compare'
+C:\Users\TEMP\Desktop\project\valid\test.cpp(16,2): error C2737: 'gtest_ar': const object must be initialized
+C:\Users\TEMP\Desktop\project\valid\test.cpp(18,1): fatal error C1057: unexpected end of file in macro expansion

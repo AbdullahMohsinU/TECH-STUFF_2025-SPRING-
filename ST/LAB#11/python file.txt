@@ -1,0 +1,26 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+import time
+
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver.implicitly_wait(5)
+driver.get("https://www.selenium.dev/selenium/web/dynamic.html")
+button = driver.find_element(By.ID, "adder")
+button.click()
+box = driver.find_element(By.ID, "box0")
+print(button.tag_name)
+print(box.tag_name)
+wait=WebDriverWait(driver,timeout=5)
+button=driver.find_element(By.ID,"reveal")
+button.click()
+txtbox=wait.until(EC.element_to_be_clickable((By.ID,"revealed")))
+txtbox.click()
+time.sleep(12)
+txtbox.send_keys("BREAKTIME")
+time.sleep(12)
+driver.quit()
