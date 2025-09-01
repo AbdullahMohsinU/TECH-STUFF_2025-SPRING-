@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1> HTML FORMS AND VALIDATION TECHNIQUES</h1>
+    <form>
+        <label for="name">Name:</label>
+   
+        <input field type="text" id="name" >
+   <br></br>
+        <label for="email">Email:</label>
+        <input field type="email" id="email" name="email">
+        <br></br>
+        <label for="password">Password:</label>
+        <input field type="password" id="password" minlength="4" >
+       <br></br>
+       <label for="gender">Gender</label>
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="gender">Male</label>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="gender">Female</label>
+
+    </br>
+       <input type="submit" value="submit">  
+</br>
+       <input type="search" id="search" name="search" value="Google.com">
+    </br>
+    <input type="checkbox" >
+    <label for="phone">Phone (digits only):</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+    required><br><br>
+<label for="MESSAGE">
+    MESSAGE
+</label>
+</br>
+<textarea></textarea></br>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+<option value="">Select your country</option>
+<option value="usa">USA</option>
+<option value="uk">UK</option>
+<option value="pakistan">Pakistan</option>
+</select><br><br>
+</form>
+
+</body>
+</html>

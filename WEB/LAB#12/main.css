@@ -1,0 +1,117 @@
+*{
+    font-family: Montserrat;}
+body{
+    background:white;
+    height:100vh;
+        margin:0px;
+    padding:0px;    }
+.form1{
+    margin-top:17px;
+    width:455px;
+    height: auto;
+    padding-top:40px;}
+.form-spacing{
+height: 3rem;}
+.button2{
+    width:270px;
+    height:35px;
+    margin-top:10px;
+    background:#498af2;
+    font-family:verdana;
+    font-size:14px;
+    color:white;
+    border-radius:5px 5px 5px 5px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: gray;
+    cursor:pointer;
+    outline:none;}
+.info3{
+    float:right;
+    margin-top:10px;
+    font-size:13px;
+    color:#498af2;
+    padding-right:42px;
+    font-weight:bold;}
+.info3 a{
+    color:#498af2;
+    text-decoration:none;}
+.forget{
+    margin-top:25px;
+    font-size:13px;
+    font-weight:bold;}
+.forget a{
+    color:#498af2;
+    text-decoration:none;}
+.info5{
+    margin-top:30px;
+    font-size:13px;
+    color:#87898b;
+    font-weight:bold;}
+.logo2{  
+    margin-top:10px;
+    height:27px;
+    width:243px;}
+.bottom {
+    float:left;
+    padding:0px;
+    margin:0px;}
+ul{
+    list-style: none;}
+ul li{
+    float:left;
+    margin-left:20px;   }
+.mainbody{
+padding: 1rem;
+    border:  1px solid #c0c0c0;
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    height: 490px;}
+h3{
+    margin-top: 10px;
+    font-size: 23px;
+font-weight: bold;}
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -205px; 
+    margin-top: -250px;
+    margin-bottom: -100px; }
+    .in{        
+        border-radius: 5px;
+        width:340px; height:54px; border: solid 1px #c2c4c6; font-size:16px; padding-left:8px; }
+    .btn{
+        background-color: #327bf0;
+        color: white;cursor:pointer;
+        outline:none;
+        float: right;
+        width: 80px;} 
+    .btn:hover{
+        background-color: #5694f7;
+        color: white’}
+    .bu{
+        margin-top: 8px;
+        float: right; margin-right: 40px;}
+    .buo{
+        margin-top: 15px;}
+.putcenter{
+    text-align: center;}
+.footer ul {
+    float:right;
+    position: fixed;
+    left: 47%;
+    bottom: 0%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    text-align: center;}
+  .forgeto{
+    color: #498af2;
+    font-size: 13px;
+    font-weight: bold;
+    left: 10%;
+    padding-right: 7em;
+    padding-left: 0em;}

@@ -1,0 +1,18 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+import time
+
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver.get("https://www.selenium.dev/documentation/webdriver/interactions/alerts/")
+driver.implicitly_wait(5)
+notify=driver.find_element(By.LINK_TEXT, "See an example alert")
+notify.click()
+alert = driver.switch_to.alert
+print("Alert message", alert.text)
+alert.accept()
+driver.quit()
